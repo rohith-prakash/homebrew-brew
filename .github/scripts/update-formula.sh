@@ -18,8 +18,12 @@ sed -E -i.bak "s/twilio-v$version_pattern/twilio-v$version/g" "$formula_path"
 sed -i.bak "s/version .*/version \"$version\"/" "$formula_path"
 sed -i.bak "s/sha256 .*/sha256 \"$sha\"/" "$formula_path"
 echo "Git configurations"
-git config --global user.email "team_interfaces+github@twilio.com"
-git config --global user.name "twilio-dx"
+# git config --global user.email "team_interfaces+github@twilio.com"
+# git config --global user.name "twilio-dx"
+
+git config --global user.email "rohithprakashklm@gmail.com"
+git config --global user.name "rohith-prakash"
+
 branch=$(git branch --show-current)
 echo "Current branch: $branch"
 git add -A
